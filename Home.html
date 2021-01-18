@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/png" href="favicon-32x33.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>LONGEVO</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      :root {
+        --p-color: #000;
+      }
+      a {
+        text-decoration: none;
+      }
+      .header {
+        font-family: sans-serif;
+        font-size: 20px;
+        background-color: white;
+        width: 100%;
+        padding: 10px 15px;
+        box-shadow: 0 0 7px #aaa;
+      }
+
+      .header-nav {
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .nav-ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+      }
+      .menu-icon {
+        display: none;
+        width: 35px;
+        cursor: pointer;
+      }
+      .menu-icon svg {
+        fill: var(--p-color);
+      }
+      .nav-li a::after {
+        content: "";
+        background: var(--p-color);
+        height: 2px;
+        position: absolute;
+        left: 50%;
+        width: 0;
+        bottom: -3px;
+        transition: 0.3s;
+      }
+      .nav-li a:hover::after {
+        left: 0;
+        width: 100%;
+      }
+
+      .logo-li a::after {
+        background: transparent;
+      }
+      .logo-li a {
+        display: flex;
+        align-items: center;
+      }
+
+      .header-nav a {
+        color: var(--p-color);
+        position: relative;
+      }
+
+      .nav-m {
+        display: none;
+        margin-top: 8px;
+      }
+      @media only screen and (max-width: 768px) {
+        .header {
+          padding: 8px 0;
+        }
+        .nav-ul {
+          flex-direction: column;
+        }
+        .nav-li {
+          display: none;
+          width: 100%;
+          justify-content: center;
+          border-top: 1px solid gainsboro;
+          padding: 10px;
+        }
+        .logo-li {
+          padding: 0 20px;
+          border-top: none;
+          display: flex;
+          align-self: flex-start;
+          justify-content: space-between;
+          align-items: right;
+        }
+        .logo-li.first {
+          align-self: s;
+        }
+        .platform-li {
+          margin-top: 10px;
+        }
+
+        .menu-icon {
+          display: block;
+          cursor: pointer;
+          margin-top: 7px;
+        }
+      }
+      .footer-longevo {
+        background: #383636;
+      }
+      .footer-logo {
+        width: 150px;
+        /* filter: drop-shadow(0 0 2px black); */
+        border-radius: 5px;
+      }
+      .footer-nav-links-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: -42px;
+      }
+
+      .footer-nav-links {
+        font-family: sans-serif;
+        font-size: 25px;
+        justify-content: space-between;
+        font-weight: 500;
+        color: white;
+        width: 40%;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .footer-nav-links ul {
+        margin: 2px;
+        padding: 20px;
+        list-style-type: none;
+      }
+
+      footer a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .footer-social-media-links-container {
+        width: 300px;
+        display: flex;
+        justify-content: space-around;
+        margin: 20px auto auto;
+        position: relative;
+        z-index: 2;
+      }
+      /* .footer-social-media-links-container a {
+        display: flex;
+        justify-content: space-between;
+        width: 30px;
+        margin-bottom: 5px;
+      } */
+      .footer-nav-links a {
+        font-size: var(--fontSize-1);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header-nav">
+        <ul class="nav-ul">
+          <li class="nav-li logo-li">
+            <a href="/home.html">
+              <div class="first">
+                <img src="default (1).png" widht="60" height="60" />
+              </div>
+
+              <!-- <span class="logo-text">Company</span> -->
+            </a>
+            <div class="menu-icon" onclick="showMenu()">
+              <svg viewBox="0 -53 386 386" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"
+                />
+                <path
+                  d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"
+                />
+                <path
+                  d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"
+                />
+              </svg>
+            </div>
+          </li>
+          <li class="nav-li platform-li">
+            <a href=""
+              ><i
+                class="fas fa-home"
+                style="
+                  background: -moz-linear-gradient(left, #234e74, #52c0a2 100%);
+                  background: -webkit-linear-gradient(
+                    left,
+                    #234e74,
+                    #52c0a2 100%
+                  );
+                  background: linear-gradient(left, #234e74, #52c0a2 100%);
+                  -webkit-background-clip: text;
+                  -moz-background-clip: text;
+                  background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                "
+              ></i>
+              Home</a
+            >
+          </li>
+          <li class="nav-li">
+            <a href=""
+              ><i
+                class="fas fa-info-circle"
+                style="
+                  background: -moz-linear-gradient(left, #234e74, #52c0a2 100%);
+                  background: -webkit-linear-gradient(
+                    left,
+                    #234e74,
+                    #52c0a2 100%
+                  );
+                  background: linear-gradient(left, #234e74, #52c0a2 100%);
+                  -webkit-background-clip: text;
+                  -moz-background-clip: text;
+                  background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                "
+              ></i>
+              About us</a
+            >
+          </li>
+          <li class="nav-li">
+            <a href=""
+              ><i
+                class="fas fa-users"
+                style="
+                  background: -moz-linear-gradient(left, #234e74, #52c0a2 100%);
+                  background: -webkit-linear-gradient(
+                    left,
+                    #234e74,
+                    #52c0a2 100%
+                  );
+                  background: linear-gradient(left, #234e74, #52c0a2 100%);
+                  -webkit-background-clip: text;
+                  -moz-background-clip: text;
+                  background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                "
+              ></i>
+              Sign Up</a
+            >
+          </li>
+          <li class="nav-li">
+            <a href=""
+              ><i
+                class="fas fa-plus-square"
+                style="
+                  background: -moz-linear-gradient(left, #234e74, #52c0a2 100%);
+                  background: -webkit-linear-gradient(
+                    left,
+                    #234e74,
+                    #52c0a2 100%
+                  );
+                  background: linear-gradient(left, #234e74, #52c0a2 100%);
+                  -webkit-background-clip: text;
+                  -moz-background-clip: text;
+                  background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                "
+              ></i>
+              Hospitals</a
+            >
+          </li>
+          <li class="nav-li">
+            <a href=""
+              ><i
+                class="fas fa-key"
+                style="
+                  background: -moz-linear-gradient(left, #234e74, #52c0a2 100%);
+                  background: -webkit-linear-gradient(
+                    left,
+                    #234e74,
+                    #52c0a2 100%
+                  );
+                  background: linear-gradient(left, #234e74, #52c0a2 100%);
+                  -webkit-background-clip: text;
+                  -moz-background-clip: text;
+                  background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                "
+              ></i>
+              Admin Login</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="footer-longevo">
+      <div
+        style="
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        "
+      >
+        <div style="height: 5px; background-color: #234e74; width: 40%"></div>
+        <div style="text-align: center">
+          <img
+            class="footer-logo"
+            src="profile-removebg-preview.png"
+            alt="LOGO"
+          />
+        </div>
+        <div style="height: 5px; background: #52c0a2; width: 40%"></div>
+      </div>
+      <div style="text-align: center">
+        <div
+          style="width: 5px; height: 50px; background: #0e8d6b; margin: auto"
+        ></div>
+      </div>
+      <div class="footer-nav-links-container">
+        <div class="footer-nav-links">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+          </ul>
+        </div>
+        <div class="footer-nav-links">
+          <ul>
+            <li>Sign up</li>
+            <li>Hospitals</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-social-media-links-container">
+        <a
+          href="https://www.facebook.com"
+          class="fa fa-facebook"
+          style="
+            display: flex;
+            font-size: 35px;
+            background: -moz-linear-gradient(left, #234e74, #52c0a2 100%);
+            background: -webkit-linear-gradient(left, #234e74, #52c0a2 100%);
+            background: linear-gradient(left, #234e74, #52c0a2 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          "
+        ></a>
+        <a
+          href="https://www.instagram.com"
+          class="fa fa-instagram"
+          style="
+            display: flex;
+
+            font-size: 35px;
+            background: -moz-linear-gradient(left, #234e74, #52c0a2 100%);
+            background: -webkit-linear-gradient(left, #234e74, #52c0a2 100%);
+            background: linear-gradient(left, #234e74, #52c0a2 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          "
+        ></a>
+        <a
+          href="https://www.twitter.com"
+          class="fa fa-twitter"
+          style="
+            display: flex;
+            font-size: 35px;
+            background: -moz-linear-gradient(left, #234e74, #52c0a2 100%);
+            background: -webkit-linear-gradient(left, #234e74, #52c0a2 100%);
+            background: linear-gradient(left, #234e74, #52c0a2 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          "
+        ></a>
+        <a
+          href="https://www.linkedin.com"
+          class="fa fa-linkedin"
+          style="
+            display: flex;
+            font-size: 35px;
+            background: -moz-linear-gradient(left, #234e74, #52c0a2 100%);
+            background: -webkit-linear-gradient(left, #234e74, #52c0a2 100%);
+            background: linear-gradient(left, #234e74, #52c0a2 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          "
+        ></a
+        ><a
+          href="https://www.pinterest.com"
+          class="fa fa-pinterest"
+          style="
+            display: flex;
+            font-size: 35px;
+            background: -moz-linear-gradient(left, #234e74, #52c0a2 100%);
+            background: -webkit-linear-gradient(left, #234e74, #52c0a2 100%);
+            background: linear-gradient(left, #234e74, #52c0a2 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          "
+        ></a>
+      </div>
+      <div style="text-align: center; margin-top: 30px; color: white">
+        ©
+        <!-- -->2021<!-- -->
+        All rights reserved to Longevo<br /><small><a>DEV VATS</a></small>
+        <!-- -->|<!-- -->
+        <small><a>ISHITA CHAWLA</a></small>
+        <!-- -->|<!-- -->
+        <small><a>PRIYAL TIWARI</a></small>
+      </div>
+    </div>
+
+    <script>
+      let els = document.querySelectorAll(".nav-li");
+      function showMenu() {
+        els.forEach((el, i) => {
+          if (i > 0) {
+            if (el.style.display === "" || el.style.display === "none") {
+              el.style.display = "flex";
+            } else {
+              el.style.display = "none";
+            }
+          }
+        });
+      }
+
+      window.addEventListener("resize", () => {
+        if (window.innerWidth <= 800) {
+          els.forEach((el, i) => i > 0 && (el.style.display = "none"));
+        } else {
+          els.forEach((el) => (el.style.display = "flex"));
+        }
+      });
+    </script>
+  </body>
+</html>
