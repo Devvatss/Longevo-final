@@ -119,6 +119,64 @@
           margin-top: 7px;
         }
       }
+      .footer-longevo {
+  background: #383636;
+}
+.footer-logo {
+  width: 150px;
+  /* filter: drop-shadow(0 0 2px black); */
+  border-radius: 5px;
+}
+.footer-nav-links-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -42px;
+}
+
+.footer-nav-links {
+  font-family: sans-serif;
+  font-size: 25px;
+  justify-content: space-between;
+  font-weight: 500;
+  color: white;
+  width: 40%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.footer-nav-links ul {
+  margin: 2px;
+  padding: 20px;
+  list-style-type: none;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-social-media-links-container {
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto auto;
+  position: relative;
+  z-index: 2;
+}
+/* .footer-social-media-links-container a {
+  display: flex;
+  justify-content: space-between;
+  width: 30px;
+  margin-bottom: 5px;
+} */
+.footer-nav-links a {
+  font-size: var(--fontSize-1);
+  color: White;
+}
+.footer-nav-links a:hover {
+  background: -webkit-linear-gradient(left, #234e74, #52c0a2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
     </style>
   </head>
   <body>
@@ -320,8 +378,134 @@
           </div>
         </form>
       </div>
-
       <h4 class="text-center"></h4>
+    </div>
+     <div class="footer-longevo">
+      <br /><br />
+      <div
+        style="
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        "
+      >
+        <div style="height: 5px; background-color: #234e74; width: 40%"></div>
+        <div style="text-align: center">
+          <img
+            class="footer-logo"
+            src="profile-removebg-preview.png"
+            alt="LOGO"
+          />
+        </div>
+        <div style="height: 5px; background: #52c0a2; width: 40%"></div>
+      </div>
+      <div style="text-align: center">
+        <div
+          style="width: 5px; height: 50px; background: #0e8d6b; margin: auto"
+        ></div>
+      </div>
+      <div class="footer-nav-links-container">
+        <div class="footer-nav-links">
+          <ul>
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+          </ul>
+        </div>
+        <div class="footer-nav-links">
+          <ul>
+            <li><a>Sign up</a></li>
+            <li><a>Hospitals</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-social-media-links-container">
+        <a
+          href="https://www.facebook.com"
+          class="fa fa-facebook"
+          style="
+            display: flex;
+            font-size: 35px;
+            background: -moz-linear-gradient(left, #234e74, #52c0a2 100%);
+            background: -webkit-linear-gradient(left, #234e74, #52c0a2 100%);
+            background: linear-gradient(left, #234e74, #52c0a2 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          "
+        ></a>
+        <a
+          href="https://www.instagram.com"
+          class="fa fa-instagram"
+          style="
+            display: flex;
+
+            font-size: 35px;
+            background: -moz-linear-gradient(left, #234e74, #52c0a2 100%);
+            background: -webkit-linear-gradient(left, #234e74, #52c0a2 100%);
+            background: linear-gradient(left, #234e74, #52c0a2 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          "
+        ></a>
+        <a
+          href="https://www.twitter.com"
+          class="fa fa-twitter"
+          style="
+            display: flex;
+            font-size: 35px;
+            background: -moz-linear-gradient(left, #234e74, #52c0a2 100%);
+            background: -webkit-linear-gradient(left, #234e74, #52c0a2 100%);
+            background: linear-gradient(left, #234e74, #52c0a2 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          "
+        ></a>
+        <a
+          href="https://www.linkedin.com"
+          class="fa fa-linkedin"
+          style="
+            display: flex;
+            font-size: 35px;
+            background: -moz-linear-gradient(left, #234e74, #52c0a2 100%);
+            background: -webkit-linear-gradient(left, #234e74, #52c0a2 100%);
+            background: linear-gradient(left, #234e74, #52c0a2 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          "
+        ></a
+        ><a
+          href="https://www.pinterest.com"
+          class="fa fa-pinterest"
+          style="
+            display: flex;
+            font-size: 35px;
+            background: -moz-linear-gradient(left, #234e74, #52c0a2 100%);
+            background: -webkit-linear-gradient(left, #234e74, #52c0a2 100%);
+            background: linear-gradient(left, #234e74, #52c0a2 100%);
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          "
+        ></a>
+      </div>
+      <div style="text-align: center; margin-top: 30px; color: white">
+        ©
+        <!-- -->2021<!-- -->
+        All rights reserved to Longevo<br /><small><a>DEV VATS</a></small>
+        <!-- -->|<!-- -->
+        <small><a>ISHITA CHAWLA</a></small>
+        <!-- -->|<!-- -->
+        <small><a>PRIYAL TIWARI</a></small>
+      </div>
+      <br />
     </div>
   </body>
 </html>
