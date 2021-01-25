@@ -10,7 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <!-- <script src="Adminlogin.js"></script> -->
+    <script src="Adminlogin.js"></script>
   </head>
 <style>
       * {
@@ -345,7 +345,7 @@ footer a {
           <strong>Welcome,</strong> please login
         </div>
 
-        <form class="form-horizontal login-form">
+        <div class="form-horizontal login-form">
           <div class="form-group relative">
             <input
               id="login_username"
@@ -367,7 +367,7 @@ footer a {
             <i class="fa fa-lock"></i>
           </div>
           <div class="form-group">
-            <button type="submit" class="btn btn-success btn-lg btn-block">
+            <button onclick='login()' type="submit" class="btn btn-success btn-lg btn-block">
               Login
             </button>
           </div>
@@ -376,7 +376,9 @@ footer a {
               <a class="forget" href="" title="forget">Forgot your password</a>
             </label>
           </div>
-        </form>
+        </div>
+        <button onclick="logout()">logout</button>
+        
       </div>
       <h4 class="text-center"></h4>
     </div>
@@ -507,5 +509,21 @@ footer a {
       </div>
       <br />
     </div>
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-auth.js"></script>
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyB2fPEnYmc9VrKZ-foh976V4ZXiMg5ESEY",
+    authDomain: "longevo-61a1d.firebaseapp.com",
+    projectId: "longevo-61a1d",
+    storageBucket: "longevo-61a1d.appspot.com",
+    messagingSenderId: "985900621619",
+    appId: "1:985900621619:web:9bdf64f5a86f675bbd6846",
+    measurementId: "G-YH0HN4F13L"
+  };
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   </body>
 </html>
