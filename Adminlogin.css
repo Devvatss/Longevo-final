@@ -183,6 +183,7 @@ select:-webkit-autofill {
 }
 
 .btn-success {
+  cursor: pointer;
   margin-top: 5px;
   background-color: transparent;
   background-image: none;
