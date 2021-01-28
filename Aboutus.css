@@ -118,51 +118,52 @@ body {
 }
 h2 {
   margin-top: 5vh;
-  font-size: 50px;
-  background: -webkit-linear-gradient(#234e74, #52c0a2);
+  font-size: 75px;
+  background: -webkit-linear-gradient(left, #234e74, #52c0a2);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .content {
   display: flex;
-  justify-content: center;
-  flex: 80%;
-  /* width: 120vh; */
+  justify-content: space-evenly;
   margin-top: 2vh;
   text-align: center;
-  color: white;
-  font-size: 22px;
-  /* margin-left:42vh; */
+  color: gainsboro;
+  font-size: 24px;
+}
+.content h5 {
+  width: 60%;
 }
 .developers {
   color: white;
   display: flex;
   /* align-items: center; */
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-.ishita {
-  flex: 33%;
-  margin-left: 75px;
-  margin-top: auto;
+/* .ishita {
+  flex: 1;
 }
 .dev {
-  flex: 33%;
+  flex: 1;
 }
 .priyal {
-  flex: 33%;
-  margin-right: 20px;
-}
+  flex: 1;
+}*/
 .dev > img {
   height: 28vh;
   width: 35vh;
+  margin-top: 2vh;
 }
 .ishita > img {
   height: 28vh;
   width: 35vh;
+  margin-top: 2vh;
 }
 .priyal > img {
   height: 28vh;
   width: 35vh;
+  margin-top: 2vh;
 }
 
 .footer-longevo {
@@ -227,7 +228,7 @@ footer a {
 .organ {
   height: 20vh;
   width: 20vh;
-  border: 3px solid #006400;
+  border: 3px solid #0e8d6b;
   border-radius: 50%;
 }
 .organ:hover {
@@ -243,11 +244,14 @@ footer a {
   font-family: Arial;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
-.cardiology {
-  margin-left: 20px;
-  /* flex: 15%; */
+.specifications h4 {
+  margin-left: 4vh;
+  margin-top: 2vh;
+}
+.gastroenterology h4 {
+  margin-left: 1vh;
 }
 .cardiology,
 .oncology,
@@ -255,5 +259,5 @@ footer a {
 .orthopaedics,
 .neurology,
 .gastroenterology {
-  flex: 10%;
+  margin-top: 4vh;
 }
