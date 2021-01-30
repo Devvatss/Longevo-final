@@ -12,174 +12,6 @@
     />
     <script src="Adminlogin.js"></script>
   </head>
-<style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-      :root {
-        --p-color: #000;
-      }
-      a {
-        text-decoration: none;
-      }
-      .header {
-        font-family: sans-serif;
-        font-size: 20px;
-        background-color: white;
-        width: 100%;
-        padding: 10px 15px;
-        box-shadow: 0 0 7px #aaa;
-      }
-
-      .header-nav {
-        max-width: 1200px;
-        margin: auto;
-      }
-
-      .nav-ul {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        list-style: none;
-      }
-      .menu-icon {
-        display: none;
-        width: 35px;
-        cursor: pointer;
-      }
-      .menu-icon svg {
-        fill: var(--p-color);
-      }
-      .nav-li a::after {
-        content: "";
-        background: var(--p-color);
-        height: 2px;
-        position: absolute;
-        left: 50%;
-        width: 0;
-        bottom: -3px;
-        transition: 0.3s;
-      }
-      .nav-li a:hover::after {
-        left: 0;
-        width: 100%;
-      }
-
-      .logo-li a::after {
-        background: transparent;
-      }
-      .logo-li a {
-        display: flex;
-        align-items: center;
-      }
-
-      .header-nav a {
-        color: var(--p-color);
-        position: relative;
-      }
-
-      .nav-m {
-        display: none;
-        margin-top: 8px;
-      }
-      @media only screen and (max-width: 768px) {
-        .header {
-          padding: 8px 0;
-        }
-        .nav-ul {
-          flex-direction: column;
-        }
-        .nav-li {
-          display: none;
-          width: 100%;
-          justify-content: center;
-          border-top: 1px solid gainsboro;
-          padding: 10px;
-        }
-        .logo-li {
-          padding: 0 20px;
-          border-top: none;
-          display: flex;
-          align-self: flex-start;
-          justify-content: space-between;
-          align-items: right;
-        }
-        .logo-li.first {
-          align-self: s;
-        }
-        .platform-li {
-          margin-top: 10px;
-        }
-
-        .menu-icon {
-          display: block;
-          cursor: pointer;
-          margin-top: 7px;
-        }
-      }
-      .footer-longevo {
-  background: #383636;
-}
-.footer-logo {
-  width: 150px;
-  /* filter: drop-shadow(0 0 2px black); */
-  border-radius: 5px;
-}
-.footer-nav-links-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: -42px;
-}
-
-.footer-nav-links {
-  font-family: sans-serif;
-  font-size: 25px;
-  justify-content: space-between;
-  font-weight: 500;
-  color: white;
-  width: 40%;
-  text-align: center;
-  cursor: pointer;
-}
-
-.footer-nav-links ul {
-  margin: 2px;
-  padding: 20px;
-  list-style-type: none;
-}
-
-footer a {
-  color: #fff;
-  text-decoration: none;
-}
-.footer-social-media-links-container {
-  width: 300px;
-  display: flex;
-  justify-content: space-around;
-  margin: 20px auto auto;
-  position: relative;
-  z-index: 2;
-}
-
-.footer-social-media-links-container a:hover {
-  -ms-transform: scale(1.3);
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
-  transition-duration: 0.5s;
-}
-.footer-nav-links a {
-  font-size: var(--fontSize-1);
-  color: White;
-}
-.footer-nav-links a:hover {
-  background: -webkit-linear-gradient(left, #234e74, #52c0a2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-    </style>
-  </head>
   <body>
     <header class="header">
       <nav class="header-nav">
@@ -207,7 +39,7 @@ footer a {
             </div>
           </li>
           <li class="nav-li platform-li">
-            <a href=""
+            <a href="Home.html"
               ><i
                 class="fas fa-home"
                 style="
@@ -228,7 +60,7 @@ footer a {
             >
           </li>
           <li class="nav-li">
-            <a href=""
+            <a href="Aboutus.html"
               ><i
                 class="fas fa-info-circle"
                 style="
@@ -249,7 +81,7 @@ footer a {
             >
           </li>
           <li class="nav-li">
-            <a href=""
+            <a href="Signup.html"
               ><i
                 class="fas fa-users"
                 style="
@@ -270,7 +102,7 @@ footer a {
             >
           </li>
           <li class="nav-li">
-            <a href=""
+            <a href="Hospitals.html"
               ><i
                 class="fas fa-plus-square"
                 style="
@@ -291,7 +123,7 @@ footer a {
             >
           </li>
           <li class="nav-li">
-            <a href=""
+            <a href="Admin login.html"
               ><i
                 class="fas fa-key"
                 style="
@@ -373,13 +205,13 @@ footer a {
             </button>
           </div>
           <div class="checkbox pull-right">
-            <label>
-              <a class="forget" href="" title="forget">Forgot your password</a>
-            </label>
+
+              <a class="forget" href="" title="forget" id="forgetpw">Forgot your password?</a>
+
           </div>
         </div>
-        <button onclick="logout()">logout</button>
-        
+        <!-- <button onclick="logout()">logout</button> -->
+
       </div>
       <h4 class="text-center"></h4>
     </div>
@@ -410,14 +242,14 @@ footer a {
       <div class="footer-nav-links-container">
         <div class="footer-nav-links">
           <ul>
-            <li><a>Home</a></li>
-            <li><a>About</a></li>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Aboutus.html">About</a></li>
           </ul>
         </div>
         <div class="footer-nav-links">
           <ul>
-            <li><a>Sign up</a></li>
-            <li><a>Hospitals</a></li>
+            <li><a href="Singup.html">Sign up</a></li>
+            <li><a href="Hospitals.html">Hospitals</a></li>
           </ul>
         </div>
       </div>
