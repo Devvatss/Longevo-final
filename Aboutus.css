@@ -112,12 +112,12 @@ body {
 .heading {
   display: flex;
   /* align-items: center; */
-  justify-content: center;
+  justify-content: space-around;
   text-align: center;
   /* flex-wrap: nowrap; */
 }
-h2 {
-  margin-top: 5vh;
+h1 {
+  /* margin-top: 5vh; */
   font-size: 75px;
   background: -webkit-linear-gradient(left, #234e74, #52c0a2);
   -webkit-background-clip: text;
