@@ -186,12 +186,10 @@ input[type="submit"] {
   position: relative;
   bottom: 50px;
 }
-
 .dropbtn:hover,
 .dropbtn:focus {
   background-color: #3e8e41;
 }
-
 #myInput {
   box-sizing: border-box;
   background-repeat: no-repeat;
