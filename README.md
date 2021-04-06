@@ -1,5 +1,5 @@
 # Longevo-final
-Longevo- Means to live long
+**Longevo**- Means to live long
 Longevo is a tailored platform for patients where they can easily book an appointment with the doctor of their preference in their desired hospitals or clinics. All they have to do is to sign up and fill in their details so as to avoid hassles of any kind. Plus, we provide you with a specific token number that helps you save your precious time as well.
 EVOCATION-
 The platform was started as an attempt to save time as well as efforts of people as well as the medical staff in difficult times of the covid -19 pandemic where people were afraid to leave their houses lest they should be effected in such difficult times. We also attempted to reduce paper work and use online technology to help both the hospitals as well as the general public. 
